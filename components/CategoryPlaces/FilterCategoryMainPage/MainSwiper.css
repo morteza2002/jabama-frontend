@@ -1,0 +1,67 @@
+.main-swiper-section {
+  width: 100%;
+}
+
+.main-swiper-container {
+  width: 100%;
+}
+
+.main-swiper-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.main-swiper-title h2 {
+  margin: 0;
+}
+
+.main-swiper-title p {
+  margin: 8px 0 0;
+}
+
+.main-swiper-navigation {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.main-swiper-nav-button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.main-swiper-see-all {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.main-swiper {
+  width: 100%;
+}
+
+.main-swiper {
+  width: 100%;
+  border: none !important;
+  outline: none !important;
+}
+
+.main-swiper .swiper-wrapper {
+  border: none !important;
+  outline: none !important;
+}
+
+.main-swiper > .swiper-wrapper > .swiper-slide {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}

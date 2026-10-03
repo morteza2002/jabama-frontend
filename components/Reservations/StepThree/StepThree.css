@@ -1,0 +1,315 @@
+.step-three {
+  width: 100%;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px 50px;
+  direction: rtl;
+}
+
+/* موفقیت */
+
+.reservation-success {
+  text-align: center;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 20px;
+  padding: 40px 20px;
+  margin-bottom: 25px;
+}
+
+.success-icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e9f8ef;
+  color: #20a464;
+  font-size: 30px;
+}
+
+.reservation-success h1 {
+  margin: 0 0 10px;
+  font-size: 24px;
+  color: #222;
+}
+
+.reservation-success p {
+  margin: 0;
+  color: #777;
+  font-size: 14px;
+}
+
+.reservation-code {
+  width: fit-content;
+  margin: 22px auto 0;
+  padding: 10px 18px;
+  border-radius: 10px;
+  background: #f6f6f6;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-size: 13px;
+}
+
+.reservation-code span {
+  color: #777;
+}
+
+.reservation-code strong {
+  color: #20a464;
+}
+
+/* کارت‌ها */
+
+.step-three-content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.reservation-card {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 18px;
+  padding: 25px;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.card-title svg {
+  color: #555;
+}
+
+.card-title h2 {
+  margin: 0;
+  font-size: 17px;
+}
+
+/* اقامتگاه */
+
+.residence-info {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.residence-info img {
+  width: 130px;
+  height: 95px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.residence-info h3 {
+  margin: 0 0 10px;
+  font-size: 17px;
+}
+
+.residence-info p {
+  margin: 0;
+  color: #777;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* جزئیات رزرو */
+
+.reservation-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.detail-item {
+  background: #f8f8f8;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.detail-item span {
+  color: #777;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.detail-item strong {
+  color: #222;
+  font-size: 13px;
+}
+
+/* مهمان */
+
+.guest-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.guest-info div {
+  background: #f8f8f8;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.guest-info span {
+  display: block;
+  color: #777;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.guest-info strong {
+  font-size: 14px;
+}
+
+/* پرداخت */
+
+.payment-summary {
+  background: #fafafa;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.price-row span {
+  color: #666;
+  font-size: 14px;
+}
+
+.price-row strong {
+  font-size: 19px;
+}
+
+.payment-success {
+  margin-top: 15px;
+  color: #20a464;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+/* دکمه‌ها */
+
+.step-three-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.step-three-actions button {
+  border: none;
+  border-radius: 12px;
+  padding: 13px 24px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.back-to-step-one {
+  background: #f2f2f2;
+  color: #444;
+}
+
+.finish-reservation {
+  background: #222;
+  color: #fff;
+}
+
+.step-three-actions button:hover {
+  opacity: 0.85;
+}
+
+/* Loading */
+
+.step-three-loading {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  color: #777;
+}
+
+.step-three-spinner {
+  width: 35px;
+  height: 35px;
+  border: 3px solid #ddd;
+  border-top-color: #333;
+  border-radius: 50%;
+  animation: step-three-spin 0.8s linear infinite;
+}
+
+@keyframes step-three-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.no-reservation {
+  color: #888;
+  font-size: 14px;
+}
+
+/* موبایل */
+
+@media (max-width: 650px) {
+  .step-three {
+    margin-top: 20px;
+    padding: 0 12px 30px;
+  }
+
+  .reservation-success {
+    padding: 30px 15px;
+  }
+
+  .reservation-success h1 {
+    font-size: 20px;
+  }
+
+  .reservation-details,
+  .guest-info {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .residence-info img {
+    width: 100px;
+    height: 80px;
+  }
+
+  .step-three-actions {
+    flex-direction: column;
+  }
+
+  .step-three-actions button {
+    width: 100%;
+  }
+}

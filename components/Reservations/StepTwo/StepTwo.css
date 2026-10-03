@@ -1,0 +1,416 @@
+.payment-page {
+  width: 100%;
+  min-height: 100vh;
+  direction: rtl;
+  background: #fff;
+  padding: 30px 40px 70px;
+  box-sizing: border-box;
+  font-family: Vazirmatn, Arial, sans-serif;
+  color: #171717;
+}
+
+.payment-container {
+  width: 1180px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 375px;
+  gap: 30px;
+  align-items: start;
+}
+
+.payment-main {
+  min-width: 0;
+}
+
+.booking-summary {
+  border: 1px solid #e5e5e5;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.booking-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between !important;
+  gap: 15px;
+  padding: 13px 16px 20px;
+}
+
+.booking-image {
+  width: 96px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.booking-title {
+  flex: 1;
+}
+
+.booking-title h2 {
+  margin: 0 0 7px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.booking-rating {
+  color: #f59e0b;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.booking-rating span {
+  color: #555;
+  font-weight: 400;
+  margin-right: 5px;
+}
+
+.booking-row {
+  min-height: 82px;
+  border-top: 1px solid #e8e8e8;
+  padding: 15px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.booking-row > div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.row-label {
+  color: #777;
+  font-size: 12px;
+}
+
+.booking-row strong {
+  font-size: 14px;
+}
+
+.edit-button {
+  border: 0;
+  background: #f2f2f2;
+  border-radius: 9px;
+  padding: 9px 17px;
+  font-family: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.booking-actions {
+  border-top: 1px solid #e8e8e8;
+  padding: 12px 16px;
+  display: flex;
+  gap: 8px;
+}
+
+.booking-actions button {
+  flex: 1;
+  height: 34px;
+  border: 0;
+  border-radius: 8px;
+  background: #f2f2f2;
+  font-family: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.payment-section {
+  margin-top: 48px;
+}
+
+.payment-section h2 {
+  font-size: 18px;
+  margin: 0 0 15px;
+}
+
+.discount-banner {
+  height: 62px;
+  background: #eee7ff;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.discount-banner > div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.discount-banner strong {
+  font-size: 17px;
+  letter-spacing: 5px;
+}
+
+.discount-banner span {
+  font-size: 10px;
+  color: #777;
+}
+
+.discount-percent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+}
+
+.discount-percent strong {
+  font-size: 16px;
+  letter-spacing: 0;
+}
+
+.payment-method {
+  min-height: 78px;
+  border-bottom: 1px solid #dedede;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  padding: 10px 5px;
+  box-sizing: border-box;
+}
+
+.payment-radio {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #bbb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.payment-radio.selected {
+  border-color: #111;
+}
+
+.payment-radio.selected span {
+  width: 10px;
+  height: 10px;
+  background: #111;
+  border-radius: 50%;
+}
+
+.payment-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.payment-info strong {
+  font-size: 14px;
+}
+
+.payment-info span {
+  font-size: 11px;
+  color: #777;
+}
+
+.payment-title {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.payment-title b {
+  background: #5c16ed;
+  color: #fff;
+  border-radius: 8px;
+  padding: 2px 6px;
+  font-size: 9px;
+}
+
+.payment-icon {
+  width: 40px;
+  height: 40px;
+  background: #f1f1f1;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.discount-code {
+  min-height: 80px;
+  border-bottom: 1px solid #dedede;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.discount-code > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.discount-code strong {
+  font-size: 13px;
+}
+
+.discount-code span {
+  color: #777;
+  font-size: 11px;
+}
+
+.discount-code button {
+  border: 0;
+  background: transparent;
+  color: #5415e8;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.reserve-message {
+  font-size: 12px;
+  line-height: 2;
+  padding: 18px 5px 12px;
+  color: #333;
+}
+
+.cancel-button {
+  width: 160px;
+  height: 40px;
+  background: #fff;
+  border: 1px solid #ff5c5c;
+  color: #e53935;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.price-card {
+  border: 1px solid #ddd;
+  border-radius: 17px;
+  padding: 18px 16px 16px;
+  box-sizing: border-box;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.08);
+  background: #fff;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 12px;
+}
+
+.price-row span {
+  color: #555;
+}
+
+.price-row strong {
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.service-row {
+  border-bottom: 1px solid #eee;
+}
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 0;
+}
+
+.total-row span {
+  font-size: 13px;
+}
+
+.total-row strong {
+  font-size: 16px;
+}
+
+.countdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0 13px;
+  font-size: 10px;
+  color: #777;
+}
+
+.countdown strong {
+  font-size: 14px;
+  color: #333;
+}
+
+.reward-box {
+  min-height: 48px;
+  background: #ddf9ea;
+  border-radius: 8px;
+  padding: 7px 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #16824e;
+  font-size: 10px;
+  line-height: 1.8;
+}
+
+.pay-button {
+  width: 100%;
+  height: 48px;
+  margin-top: 16px;
+  border: 0;
+  border-radius: 8px;
+  background: #111;
+  color: #fff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.pay-button:hover {
+  background: #222;
+}
+
+.support-section {
+  width: 375px;
+  max-width: 100%;
+  margin: 25px calc((100% - 1180px) / 2 + 805px) 0 auto;
+  text-align: center;
+  color: #666;
+}
+
+.support-icon {
+  color: #146cff;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.support-section p {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.9;
+}
+
+.support-section strong {
+  display: block;
+  margin-top: 25px;
+  color: #222;
+  font-size: 13px;
+}

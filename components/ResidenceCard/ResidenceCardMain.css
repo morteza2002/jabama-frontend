@@ -1,0 +1,93 @@
+.residence-card {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.residence-card-image {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f3f3;
+  color: #777;
+  position: relative;
+}
+.residence-card-image img {
+  height: 100% !important;
+  object-fit: contain;
+}
+
+.residence-card-content {
+  padding: 16px;
+}
+
+.residence-card-title {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.residence-card-description {
+  margin: 0 0 12px;
+  color: #666;
+}
+
+.residence-card-info {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.residence-card-price {
+  font-weight: bold;
+}
+
+.residence-card-loan {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  z-index: 10;
+}
+
+.residence-card-loan span {
+  display: block;
+
+  background-color: #eae4d9;
+  color: #222;
+
+  font-size: 10px;
+  padding: 5px 8px;
+
+  border-radius: 8px;
+
+  opacity: 0.8;
+}
+
+.wrapper-item-residence {
+  display: flex;
+  justify-content: space-between;
+}
+.like-svg {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  z-index: 10;
+}
+
+.like-svg svg {
+  display: block;
+
+  color: #ffffff;
+
+  font-size: 20px;
+  padding: 5px 8px;
+
+  border-radius: 8px;
+
+  opacity: 0.8;
+}

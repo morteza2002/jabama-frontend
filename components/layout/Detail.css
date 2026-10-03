@@ -1,0 +1,147 @@
+.iran-travel-info {
+  width: 100%;
+  background-color: #fff;
+  direction: rtl;
+}
+
+.iran-travel-info__container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px 24px 40px;
+}
+
+.iran-travel-info__description {
+  width: 100%;
+}
+
+.iran-travel-info__description h2 {
+  margin: 0 0 12px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #242424;
+}
+
+.iran-travel-info__description p {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #555;
+}
+
+.iran-travel-info__content {
+  max-height: 96px;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.iran-travel-info__content--open {
+  max-height: 1000px;
+}
+/* -------------------------
+   Toggle
+------------------------- */
+
+.iran-travel-info__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+
+  margin-top: 8px;
+  padding: 0;
+
+  border: 0;
+  background: transparent;
+
+  color: #242424;
+
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.iran-travel-info__arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+
+  transition: transform 0.25s ease;
+}
+
+.iran-travel-info__arrow--open {
+  transform: rotate(0deg);
+}
+
+.iran-travel-info__toggle:hover {
+  color: #555;
+}
+
+.iran-travel-info__links-section {
+  margin-top: 68px;
+}
+
+.iran-travel-info__links-section h3 {
+  margin: 0 0 20px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+
+  color: #242424;
+}
+
+.iran-travel-info__links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  gap: 10px;
+
+  width: 100%;
+}
+
+.iran-travel-info__links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 28px;
+
+  padding: 4px 12px;
+
+  border-radius: 20px;
+
+  background-color: #f5f5f5;
+
+  color: #555;
+
+  font-size: 12px;
+  font-weight: 400;
+
+  text-decoration: none;
+
+  white-space: nowrap;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.iran-travel-info__links a:hover {
+  background-color: #eeeeee;
+  color: #222;
+}
+
+.iran-travel-info__more {
+  display: none;
+}
+.iran-travel-info__content--open .iran-travel-info__more {
+  display: inline;
+}

@@ -1,0 +1,38 @@
+.residence-card-skeleton {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.residence-card-skeleton-image {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
+}
+
+.residence-card-skeleton-top {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.residence-card-skeleton-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+}
+
+.residence-card-skeleton-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4px 0;
+}

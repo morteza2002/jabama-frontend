@@ -1,0 +1,437 @@
+.date-picker-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 99999;
+
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.date-picker-modal {
+  width: 820px;
+  max-width: calc(100vw - 40px);
+  max-height: 90vh;
+
+  overflow-y: auto;
+
+  background: #fff;
+  border-radius: 18px;
+
+  direction: rtl;
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.16),
+    0 4px 15px rgba(0, 0, 0, 0.06);
+
+  scrollbar-width: thin;
+  scrollbar-color: #d5d5d5 transparent;
+
+
+  margin: 0;
+}
+
+.date-picker-modal::-webkit-scrollbar {
+  width: 6px;
+}
+
+.date-picker-modal::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.date-picker-modal::-webkit-scrollbar-thumb {
+  background: #d5d5d5;
+  border-radius: 10px;
+}
+
+
+
+.date-picker-header {
+  position: relative;
+
+  margin: 16px;
+  padding: 18px 52px 18px 48px;
+
+  display: flex;
+  align-items: flex-start;
+
+  background: #f0f6ff;
+
+  border: 1px solid #e1ecff;
+  border-radius: 14px;
+}
+
+.date-picker-close {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.8);
+
+  color: #333;
+  font-size: 22px;
+  font-weight: 300;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.date-picker-close:hover {
+  background: #fff;
+  transform: scale(1.05);
+}
+
+.date-picker-info {
+  width: 100%;
+}
+
+.date-picker-info strong {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #1f2937;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.date-picker-info p {
+  margin: 0;
+
+  color: #59636f;
+
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.date-picker-info-icon {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #1677ff;
+  color: #fff;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  box-shadow: 0 3px 8px rgba(22, 119, 255, 0.25);
+}
+
+
+
+.date-picker-content {
+  padding: 8px 24px 28px;
+}
+
+
+
+.date-picker-tabs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 6px;
+
+  margin-bottom: 18px;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+.date-picker-tab {
+  position: relative;
+
+  border: none;
+  background: transparent;
+
+  padding: 10px 20px 13px;
+
+  border-radius: 0;
+
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+
+  color: #777;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease;
+}
+
+.date-picker-tab:hover {
+  color: #222;
+  background: #fafafa;
+}
+
+.date-picker-tab.active {
+  background: transparent;
+
+  color: #101820;
+  font-weight: 700;
+
+  box-shadow: none;
+}
+
+.date-picker-tab.active::after {
+  content: "";
+
+  position: absolute;
+
+  right: 12px;
+  left: 12px;
+  bottom: -1px;
+
+  height: 2px;
+
+  background: #101820;
+
+  border-radius: 5px 5px 0 0;
+}
+
+
+
+.date-picker-range-title {
+  min-height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 10px;
+
+  color: #555;
+
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.date-picker-range-title strong {
+  color: #101820;
+}
+
+/* =========================
+   Calendar
+========================= */
+
+.jabama-calendar {
+  width: 100% !important;
+
+  padding: 0 !important;
+
+  box-shadow: none !important;
+
+  font-family: inherit !important;
+}
+
+/* Wrapper */
+
+.jabama-calendar .rmdp-wrapper {
+  width: 100% !important;
+
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Calendar */
+
+.jabama-calendar .rmdp-calendar {
+  width: 100% !important;
+
+  padding: 0 !important;
+}
+
+/* =========================
+   Calendar Header
+========================= */
+
+.jabama-calendar .rmdp-header {
+  margin-bottom: 12px;
+}
+
+.jabama-calendar .rmdp-header-values {
+  font-size: 14px;
+  font-weight: 700;
+
+  color: #222;
+}
+
+/* فلش ماه */
+
+.jabama-calendar .rmdp-arrow-container {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  transition: background 0.2s ease;
+}
+
+.jabama-calendar .rmdp-arrow-container:hover {
+  background: #f4f4f4;
+}
+
+.jabama-calendar .rmdp-arrow {
+  border-color: #444;
+}
+
+/* =========================
+   Week Days
+========================= */
+
+.jabama-calendar .rmdp-week {
+  margin-bottom: 4px;
+}
+
+.jabama-calendar .rmdp-week-day {
+  color: #8a8a8a;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* =========================
+   Days
+========================= */
+
+.jabama-calendar .rmdp-day {
+  height: 42px;
+  width: 42px;
+}
+
+.jabama-calendar .rmdp-day span {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  font-size: 13px;
+
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+.jabama-calendar
+  .rmdp-day:not(.rmdp-disabled):not(.rmdp-day-hidden)
+  span:hover {
+  background: #f0f0f0;
+}
+
+/* =========================
+   Selected Day
+========================= */
+
+.jabama-calendar .rmdp-day.rmdp-selected span {
+  background: #101820;
+  color: #fff;
+
+  box-shadow: 0 3px 8px rgba(16, 24, 32, 0.2);
+}
+
+/* =========================
+   Range
+========================= */
+
+.jabama-calendar .rmdp-range {
+  background: #f3f5f7 !important;
+}
+
+.jabama-calendar .rmdp-range span {
+  background: #101820;
+  color: #fff;
+}
+
+/* روزهای بین بازه */
+
+.jabama-calendar .rmdp-range:not(.rmdp-selected) span {
+  background: #e9edf1;
+  color: #222;
+  box-shadow: none;
+}
+
+/* =========================
+   Today
+========================= */
+
+.jabama-calendar .rmdp-today span {
+  background: transparent;
+  color: #101820;
+
+  font-weight: 700;
+}
+
+.jabama-calendar
+  .rmdp-today:not(.rmdp-selected)
+  span::after {
+  content: "";
+
+  position: absolute;
+
+  bottom: 4px;
+
+  width: 4px;
+  height: 4px;
+
+  border-radius: 50%;
+
+  background: #1677ff;
+}
+
+/* =========================
+   Disabled
+========================= */
+
+.jabama-calendar .rmdp-disabled span {
+  color: #c7c7c7 !important;
+  cursor: not-allowed;
+}
+
+/* =========================
+   Two Months
+========================= */
+
+.jabama-calendar .rmdp-month-picker,
+.jabama-calendar .rmdp-year-picker {
+  border-radius: 12px;
+}
+
